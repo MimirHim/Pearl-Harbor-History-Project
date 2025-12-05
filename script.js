@@ -148,6 +148,7 @@ if (catalogSearch) {
   });
 }
 
+// Intersection Observer for scroll animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -100px 0px'
@@ -161,15 +162,18 @@ const observer = new IntersectionObserver((entries) => {
   }
 }, observerOptions);
 
+// Observe elements for animation
 const animateElements = document.querySelectorAll('.library-card, .catalog-item, .database-card, .source-card, .primary-source, .detail-card, .timeline-item');
 for (const el of animateElements) {
   observer.observe(el);
 }
 
+// Scroll to top functionality
 window.addEventListener('load', () => {
   window.scrollTo(0, 0);
 });
 
+// Add transition effects to catalog items
 for (const item of catalogItems) {
   item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
 }
