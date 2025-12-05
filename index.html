@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pearl Harbor</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+ 
+ 
+    <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Pearl Harbor 1941</div>
+      <div class="nav-menu" id="navMenu">
+        <a href="#library" class="nav-link">Library</a>
+        <a href="#catalog" class="nav-link">Catalog</a>
+        <a href="#databases" class="nav-link">Databases</a>
+        <a href="#sources" class="nav-link">Sources</a>
+        <a href="#argument" class="nav-link">About</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+  <!-- Library Section -->
+  <section id="library" class="section">
+    <div class="container">
+      <h2 class="section-title">Library</h2>
+      <p class="section-description">Curated collection of reputable historical sources, books, journals, and databases for comprehensive Pearl Harbor research.</p>
+
+      <div class="library-grid">
+        <div class="library-card">
+          <div class="library-icon">📚</div>
+          <h3>Academic Books</h3>
+          <p>Comprehensive historical accounts and scholarly analyses of the Pearl Harbor attack and its aftermath.</p>
+        </div>
+        <div class="library-card">
+          <div class="library-icon">📰</div>
+          <h3>Historical Journals</h3>
+          <p>Peer-reviewed articles examining military strategy, intelligence failures, and diplomatic relations.</p>
+        </div>
+        <div class="library-card">
+          <div class="library-icon">🗄️</div>
+          <h3>Archives</h3>
+          <p>Primary source materials from government records, military documents, and eyewitness testimonies.</p>
+        </div>
+        <div class="library-card">
+          <div class="library-icon">🌐</div>
+          <h3>Digital Databases</h3>
+          <p>Access to JSTOR, Project MUSE, and other academic databases for in-depth research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Catalog Section -->
+  <section id="catalog" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Historical Catalog</h2>
+      <p class="section-description">Interactive catalog of historical documents categorized by type and significance.</p>
+
+      <div class="catalog-search">
+        <input type="text" id="catalogSearch" placeholder="Search documents..." class="search-input" />
+      </div>
+
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-category="all">All Documents</button>
+        <button class="filter-btn" data-category="government">Government Records</button>
+        <button class="filter-btn" data-category="military">Military Reports</button>
+        <button class="filter-btn" data-category="media">Media Archives</button>
+        <button class="filter-btn" data-category="diplomatic">Diplomatic Communications</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+        <div class="catalog-item" data-category="government">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/jgm3a0.jpg" alt="Joint Committee Report" />
+          </div>
+          <h3>Joint Committee Investigation Report</h3>
+          <p class="catalog-date">1946</p>
+          <p>Official congressional investigation into the causes and failures of Pearl Harbor.</p>
+        </div>
+        <div class="catalog-item" data-category="government">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/kna2m7.jpg" alt="FDR Speech" />
+          </div>
+          <h3>FDR's "Day of Infamy" Speech</h3>
+          <p class="catalog-date">December 8, 1941</p>
+          <p>Presidential address to Congress requesting declaration of war against Japan.</p>
+        </div>
+        <div class="catalog-item" data-category="diplomatic">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/xyq27v.jpg" alt="Japanese Announcement" />
+          </div>
+          <h3>Japanese Government Statement</h3>
+          <p class="catalog-date">December 7, 1941</p>
+          <p>Official Japanese announcement regarding the attack on Pearl Harbor.</p>
+        </div>
+        <div class="catalog-item" data-category="military">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/gbm82h.jpg" alt="Naval Dispatch" />
+          </div>
+          <h3>"This is Not Drill" Dispatch</h3>
+          <p class="catalog-date">December 7, 1941</p>
+          <p>First official U.S. military communication announcing the attack.</p>
+        </div>
+        <div class="catalog-item" data-category="media">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/0reli2.jpg" alt="USS Arizona" />
+          </div>
+          <h3>USS Arizona Photograph</h3>
+          <p class="catalog-date">December 7, 1941</p>
+          <p>Official U.S. Navy photograph documenting the destruction.</p>
+        </div>
+        <div class="catalog-item" data-category="military">
+          <div class="catalog-image-wrapper">
+            <img src="https://files.catbox.moe/5cmeeo.jpg" alt="Aftermath" />
+          </div>
+          <h3>Pearl Harbor Aftermath</h3>
+          <p class="catalog-date">December 1941</p>
+          <p>Documentation of the extensive damage to the Pacific Fleet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- Databases Section -->
+  <section id="databases" class="section">
+    <div class="container">
+      <h2 class="section-title">Research Databases & Secondary Sources</h2>
+      <p class="section-description">Access to academic databases and five quality secondary sources with full citations.</p>
+
+      <div class="databases-section">
+        <h3 class="subsection-title">Academic Databases</h3>
+        <div class="database-grid">
+          <div class="database-card">
+            <h4>JSTOR</h4>
+            <p>Digital library of academic journals, books, and primary sources. Access peer-reviewed articles on WWII history and military strategy.</p>
+            <a href="https://www.jstor.org" target="_blank" class="db-link">Visit JSTOR →</a>
+          </div>
+          <div class="database-card">
+            <h4>Project MUSE</h4>
+            <p>Scholarly journals in the humanities and social sciences. Extensive collection on American history and international relations.</p>
+            <a href="https://muse.jhu.edu" target="_blank" class="db-link">Visit Project MUSE →</a>
+          </div>
+          <div class="database-card">
+            <h4>National Archives</h4>
+            <p>Official repository of U.S. government records, including military documents and diplomatic communications from 1941.</p>
+            <a href="https://www.archives.gov" target="_blank" class="db-link">Visit Archives →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sources-section">
+        <h3 class="subsection-title">Five Quality Secondary Sources</h3>
+        <div class="sources-list">
+          <div class="source-card">
+            <div class="source-number">1</div>
+            <div class="source-content">
+              <h4>Pearl Harbor: From Infamy to Greatness</h4>
+              <p class="source-author">Craig Nelson</p>
+              <p class="source-citation">Nelson, C. (2016). <em>Pearl Harbor: From infamy to greatness</em>. Scribner.</p>
+              <p class="source-description">Comprehensive account of the attack and U.S. response, examining both military and civilian perspectives.</p>
+            </div>
+          </div>
+          <div class="source-card">
+            <div class="source-number">2</div>
+            <div class="source-content">
+              <h4>Day of Infamy</h4>
+              <p class="source-author">Walter Lord</p>
+              <p class="source-citation">Lord, W. (1957). <em>Day of infamy</em>. Henry Holt & Co.</p>
+              <p class="source-description">Classic narrative of the events and aftermath, considered one of the definitive accounts of December 7, 1941.</p>
+            </div>
+          </div>
+          <div class="source-card">
+            <div class="source-number">3</div>
+            <div class="source-content">
+              <h4>At Dawn We Slept: The Untold Story of Pearl Harbor</h4>
+              <p class="source-author">Gordon W. Prange</p>
+              <p class="source-citation">Prange, G. W. (1981). <em>At dawn we slept: The untold story of Pearl Harbor</em>. McGraw-Hill.</p>
+              <p class="source-description">In-depth analysis of causes, execution, and consequences based on extensive research and interviews.</p>
+            </div>
+          </div>
+          <div class="source-card">
+            <div class="source-number">4</div>
+            <div class="source-content">
+              <h4>Pearl Harbor: The Verdict of History</h4>
+              <p class="source-author">Gordon W. Prange, Donald M. Goldstein, Katherine V. Dillon</p>
+              <p class="source-citation">Prange, G. W., Goldstein, D. M., & Dillon, K. V. (1986). <em>Pearl Harbor: The verdict of history</em>. McGraw-Hill.</p>
+              <p class="source-description">Explores responsibility and impact on U.S. policy, examining intelligence failures and decision-making.</p>
+            </div>
+          </div>
+          <div class="source-card">
+            <div class="source-number">5</div>
+            <div class="source-content">
+              <h4>December 1941: 31 Days that Changed America and Saved the World</h4>
+              <p class="source-author">Craig Shirley</p>
+              <p class="source-citation">Shirley, C. (2011). <em>December 1941: 31 days that changed America and saved the world</em>. Thomas Nelson.</p>
+              <p class="source-description">Examines U.S. reaction and policy changes post-attack, covering the entire month of December 1941.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- Primary Sources Section -->
+  <section id="sources" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Primary Sources</h2>
+      <p class="section-description">Original documents, photographs, and records from December 7, 1941, and its aftermath.</p>
+
+      <div class="primary-sources-grid">
+        <div class="primary-source">
+          <div class="primary-image">
+            <img src="https://files.catbox.moe/jgm3a0.jpg" alt="Joint Committee Report" />
+            <div class="image-label">Government Document - 1946</div>
+          </div>
+          <div class="primary-content">
+            <h3>Report of the Joint Committee on the Investigation of the Pearl Harbor Attack</h3>
+            <p class="primary-citation">United States Congress. (1946). <em>Report of the Joint Committee on the Investigation of the Pearl Harbor Attack</em>. U.S. Government Printing Office.</p>
+            <p class="primary-description">Official government investigation into the causes and failures surrounding the attack. This comprehensive report examined intelligence breakdowns, military preparedness, and decision-making processes that led to the surprise attack.</p>
+          </div>
+        </div>
+
+        <div class="primary-source">
+          <div class="primary-image">
+            <img src="https://files.catbox.moe/kna2m7.jpg" alt="FDR Day of Infamy Speech" />
+            <div class="image-label">Presidential Address - December 8, 1941</div>
+          </div>
+          <div class="primary-content">
+            <h3>FDR's "Day of Infamy" Speech</h3>
+            <p class="primary-citation">Roosevelt, F. D. (1941, December 8). <em>Address to Congress Requesting a Declaration of War with Japan</em>. U.S. Government.</p>
+            <p class="primary-description">President Roosevelt's historic speech to Congress, delivered one day after the attack. This address marked the United States' entry into World War II and remains one of the most significant presidential speeches in American history.</p>
+          </div>
+        </div>
+
+        <div class="primary-source">
+          <div class="primary-image">
+            <img src="https://files.catbox.moe/xyq27v.jpg" alt="Japanese Announcement" />
+            <div class="image-label">Government Statement - December 7, 1941</div>
+          </div>
+          <div class="primary-content">
+            <h3>Japanese Announcement of the Attack at Pearl Harbor</h3>
+            <p class="primary-citation">Hirohito. (1941). <em>Japanese announcement of the attack at Pearl Harbor</em>. Gilder Lehrman Institute of American History.</p>
+            <p class="primary-description">Official Japanese government statement on the attack, providing insight into the Japanese perspective and justification for military action against the United States.</p>
+          </div>
+        </div>
+
+        <div class="primary-source">
+          <div class="primary-image">
+            <img src="https://files.catbox.moe/gbm82h.jpg" alt="This is Not Drill Dispatch" />
+            <div class="image-label">Naval Communication - December 7, 1941</div>
+          </div>
+          <div class="primary-content">
+            <h3>"This is Not Drill" Naval Dispatch</h3>
+            <p class="primary-citation">Commander in Chief, U.S. Pacific Fleet. (1941, December 7). <em>"This is Not Drill" Naval Dispatch</em>. U.S. Navy.</p>
+            <p class="primary-description">First official U.S. military communication announcing the attack. This urgent dispatch alerted all forces that Pearl Harbor was under genuine attack, not a training exercise.</p>
+          </div>
+        </div>
+
+        <div class="primary-source">
+          <div class="primary-image">
+            <img src="https://files.catbox.moe/0reli2.jpg" alt="USS Arizona Burning" />
+            <div class="image-label">Official U.S. Navy Photograph - December 7, 1941</div>
+          </div>
+          <div class="primary-content">
+            <h3>USS Arizona Burning</h3>
+            <p class="primary-citation">U.S. Navy. (1941, December 7). <em>USS Arizona burning after the Japanese attack on Pearl Harbor</em>. U.S. Navy.</p>
+            <p class="primary-description">Iconic photograph documenting the destruction during the attack. The USS Arizona remains submerged at Pearl Harbor, serving as a memorial to the 1,177 sailors and Marines who lost their lives aboard the ship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- Historical Argument Section -->
+  <section id="argument" class="section">
+    <div class="container">
+      <h2 class="section-title">Historical Analysis: A Turning Point in American History</h2>
+
+      <div class="argument-intro">
+        <h3>The Argument</h3>
+        <p class="argument-thesis">The attack on Pearl Harbor on December 7, 1941, was not merely a military strike but a pivotal moment that transformed American foreign policy, ended U.S. isolationism, and united a divided nation in a common cause. The event's significance lies not only in its immediate military impact but in how it fundamentally reshaped America's role on the world stage.</p>
+      </div>
+
+      <div class="key-details">
+        <h3>Key Details</h3>
+        <div class="details-grid">
+          <div class="detail-card">
+            <h4>The Attack</h4>
+            <ul>
+              <li>353 Japanese aircraft launched in two waves</li>
+              <li>8 battleships damaged or destroyed</li>
+              <li>2,403 Americans killed, 1,178 wounded</li>
+              <li>Attack lasted approximately 90 minutes</li>
+              <li>Occurred at 7:48 AM Hawaiian time</li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h4>Intelligence Failures</h4>
+            <ul>
+              <li>Intercepted Japanese communications not properly analyzed</li>
+              <li>Radar detection dismissed as training error</li>
+              <li>Lack of coordination between Army and Navy</li>
+              <li>Diplomatic negotiations ongoing when attack occurred</li>
+              <li>Underestimation of Japanese military capability</li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h4>Immediate Consequences</h4>
+            <ul>
+              <li>U.S. declaration of war on December 8, 1941</li>
+              <li>Germany and Italy declared war on U.S. December 11</li>
+              <li>Mobilization of 16 million American troops</li>
+              <li>Shift to total war economy and production</li>
+              <li>Japanese-American internment (Executive Order 9066)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <h3>Timeline of Events</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">1940-1941</div>
+              <h4>Rising Tensions</h4>
+              <p>U.S. imposes oil embargo on Japan; diplomatic negotiations deteriorate as Japan expands in Asia.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">November 26, 1941</div>
+              <h4>Japanese Fleet Departs</h4>
+              <p>Japanese carrier strike force leaves Hitokappu Bay under radio silence, heading toward Hawaii.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">December 7, 1941 - 7:48 AM</div>
+              <h4>Attack Begins</h4>
+              <p>First wave of Japanese aircraft strikes Pearl Harbor; "This is not drill" message sent.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">December 7, 1941 - 9:00 AM</div>
+              <h4>Attack Ends</h4>
+              <p>Second wave completes assault; Japanese forces withdraw with minimal losses.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">December 8, 1941</div>
+              <h4>"Day of Infamy" Speech</h4>
+              <p>President Roosevelt addresses Congress; U.S. declares war on Japan with only one dissenting vote.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">December 11, 1941</div>
+              <h4>Global War</h4>
+              <p>Germany and Italy declare war on United States, bringing America fully into World War II.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">1942-1945</div>
+              <h4>American Mobilization</h4>
+              <p>U.S. transforms into "Arsenal of Democracy," producing unprecedented military and industrial output.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cause-effect">
+        <h3>Causes and Effects</h3>
+        <div class="cause-effect-grid">
+          <div class="cause-box">
+            <h4>Contributing Causes</h4>
+            <ul>
+              <li><strong>Japanese Expansionism:</strong> Japan's invasion of China and Southeast Asia threatened American interests in the Pacific.</li>
+              <li><strong>Economic Sanctions:</strong> U.S. oil embargo crippled Japan's military and industrial capacity, forcing a decision for war.</li>
+              <li><strong>Failed Diplomacy:</strong> Breakdown of negotiations between Japanese diplomats and U.S. Secretary of State Cordell Hull.</li>
+              <li><strong>Strategic Calculation:</strong> Japan believed a decisive strike would demoralize America and allow Japanese dominance in Asia.</li>
+              <li><strong>American Unpreparedness:</strong> Despite war warnings, Pearl Harbor was not on full alert and defenses were inadequate.</li>
+            </ul>
+          </div>
+          <div class="effect-box">
+            <h4>Long-term Effects</h4>
+            <ul>
+              <li><strong>End of Isolationism:</strong> America permanently abandoned its isolationist stance and became a global superpower.</li>
+              <li><strong>United Nations:</strong> U.S. leadership in creating international institutions for collective security.</li>
+              <li><strong>Nuclear Age:</strong> The war led to development of atomic weapons and fundamentally changed warfare.</li>
+              <li><strong>Cold War:</strong> U.S.-Soviet alliance during WWII transformed into decades-long ideological conflict.</li>
+              <li><strong>American Century:</strong> U.S. emerged as dominant economic and military power, shaping global order.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="significance">
+        <h3>Historical Significance</h3>
+        <div class="significance-content">
+          <div class="significance-text">
+            <p>The attack on Pearl Harbor represents a watershed moment in American and world history. It transformed the United States from a nation reluctant to engage in "foreign entanglements" into the leader of the free world. The attack unified American public opinion overnight—polling showed support for war jumped from 15% to over 90% within days.</p>
+            <p>The military failures and intelligence breakdowns exposed at Pearl Harbor led to fundamental reforms in U.S. military structure, including better inter-service cooperation and the eventual creation of the Department of Defense and Central Intelligence Agency. The congressional investigation established important precedents for governmental accountability and oversight.</p>
+            <p>Perhaps most significantly, Pearl Harbor demonstrated that geographic isolation could no longer protect America from global conflicts. This realization shaped U.S. foreign policy for generations, leading to permanent military alliances, forward deployment of forces, and active engagement in international affairs—policies that continue to define American strategy today.</p>
+          </div>
+          <div class="significance-images">
+            <img src="https://files.catbox.moe/3bc3p4.jpg" alt="Pearl Harbor Memorial" />
+            <p class="image-caption">Pearl Harbor National Memorial - A lasting tribute to those who served and sacrificed</p>
+            <img src="https://files.catbox.moe/pwq7mn.jpg" alt="Historical Documentation" />
+            <p class="image-caption">Preserved historical records ensure future generations understand this pivotal moment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Pearl Harbor Historical Research</h4>
+          <p>A comprehensive educational resource examining the events of December 7, 1941, and their lasting impact on American history.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Additional Resources</h4>
+          <ul>
+            <li><a href="https://www.nps.gov/perl/index.htm" target="_blank">Pearl Harbor National Memorial</a></li>
+            <li><a href="https://www.archives.gov" target="_blank">National Archives</a></li>
+            <li><a href="https://www.history.navy.mil" target="_blank">Naval History and Heritage Command</a></li>
+            <li><a href="https://www.loc.gov" target="_blank">Library of Congress</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Academic Databases</h4>
+          <ul>
+            <li><a href="https://www.jstor.org" target="_blank">JSTOR</a></li>
+            <li><a href="https://muse.jhu.edu" target="_blank">Project MUSE</a></li>
+            <li><a href="https://www.gilderlehrman.org" target="_blank">Gilder Lehrman Institute</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pearl Harbor Historical Research. Educational purposes only. All primary source materials are in the public domain or used under fair use for educational purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
