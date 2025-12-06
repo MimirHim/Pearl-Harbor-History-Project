@@ -37,6 +37,14 @@ function updateActiveNavLink() {
   const sections = document.querySelectorAll('.section');
   const scrollPosition = window.scrollY + 200;
 
+  // If we're near the top of the page, don't highlight any links
+  if (window.scrollY < 100) {
+    for (const link of navLinks) {
+      link.classList.remove('active');
+    }
+    return;
+  }
+
   for (const section of sections) {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
