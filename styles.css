@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +34,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
   line-height: 1.7;
   color: var(--text-dark);
   background-color: var(--bg-white);
@@ -145,99 +147,6 @@ body {
   background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
   transition: all 0.3s ease;
   border-radius: 3px;
-}
-
-
-
-/* Hero Section */
-.hero-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('https://files.catbox.moe/5cmeeo.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: 0;
-}
-
-.hero-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.6) 100%);
-  z-index: 1;
-}
-
-.hero-overlay {
-  display: none;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: var(--text-light);
-  padding: 40px;
-  max-width: 900px;
-}
-
-.hero-title {
-  font-size: 6.5rem;
-  font-weight: 900;
-  margin-bottom: 24px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  letter-spacing: -2px;
-  line-height: 1.1;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero-subtitle {
-  font-size: 2rem;
-  margin-bottom: 48px;
-  opacity: 0.95;
-  font-weight: 400;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  letter-spacing: 0.5px;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 20px 48px;
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
-  color: var(--text-light);
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.15rem;
-  font-weight: 700;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 24px rgba(192, 57, 43, 0.4);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.cta-button:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 32px rgba(192, 57, 43, 0.5);
 }
 
 
@@ -1102,14 +1011,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 968px) {
-  .hero-title {
-    font-size: 4.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.6rem;
-  }
-
   .primary-source {
     grid-template-columns: 1fr;
   }
@@ -1155,13 +1056,13 @@ body {
     background: rgba(255, 255, 255, 0.98);
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 8px 12px;
+    gap: 0;
+    padding: 0;
     border-radius: 16px;
     box-shadow: 0 12px 32px var(--shadow-heavy);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.36s cubic-bezier(0.2, 0, 0.2, 1), padding 0.36s ease;
+    transition: max-height 0.36s cubic-bezier(0.2, 0, 0.2, 1), padding 0.36s ease, gap 0.36s ease;
     z-index: 1100;
   }
 
@@ -1173,6 +1074,7 @@ body {
   .nav-menu.active {
     max-height: 420px;
     padding: 12px 16px;
+    gap: 8px;
   }
 
   .hamburger {
@@ -1197,10 +1099,6 @@ body {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 
-  .hero-title {
-    font-size: 3rem;
-  }
-
   /* Make nav links full-width and easily tappable on mobile */
   .nav-link {
     display: block;
@@ -1209,10 +1107,6 @@ body {
     text-align: center;
     border-radius: 12px;
     font-size: 1rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.3rem;
   }
 
   .section-title {
@@ -1246,19 +1140,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .cta-button {
-    padding: 16px 36px;
-    font-size: 1rem;
-  }
-
   .catalog-filters {
     gap: 12px;
   }
