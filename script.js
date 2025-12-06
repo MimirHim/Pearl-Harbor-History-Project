@@ -1,3 +1,28 @@
+// Preload all images for instant loading
+function preloadImages() {
+  const images = document.querySelectorAll('img');
+  const imagePromises = [];
+
+  images.forEach(img => {
+    if (img.src) {
+      const imageLoader = new Image();
+      const promise = new Promise((resolve, reject) => {
+        imageLoader.onload = resolve;
+        imageLoader.onerror = resolve; // Still resolve even on error to not block
+      });
+      imageLoader.src = img.src;
+      imagePromises.push(promise);
+    }
+  });
+
+  return Promise.all(imagePromises);
+}
+
+// Start preloading images immediately
+preloadImages().then(() => {
+  console.log('All images preloaded');
+});
+
 // Navigation functionality
 const navbar = document.getElementById('navbar');
 const navMenu = document.getElementById('navMenu');
