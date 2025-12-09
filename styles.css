@@ -77,7 +77,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-/* Spacer element to offset fixed navbar so page content doesn't hide behind it */
+
 .nav-spacer {
   height: 84px;
 }
@@ -1045,7 +1045,7 @@ body {
     width: 95%;
   }
 
-  /* Mobile nav: make menu dropdown vertical, centered and full-width within navbar */
+  /* Mobile nav */
   .nav-menu {
     position: absolute;
     top: 72px;
@@ -1066,7 +1066,7 @@ body {
     z-index: 1100;
   }
 
-  /* Spacer styling to match fixed navbar height on mobile */
+  /* Spacer styling */
   .nav-spacer {
     height: 84px;
   }
@@ -1099,7 +1099,6 @@ body {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 
-  /* Make nav links full-width and easily tappable on mobile */
   .nav-link {
     display: block;
     width: 100%;
@@ -1161,3 +1160,4 @@ body {
     padding: 40px 28px;
   }
 }
+
